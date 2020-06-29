@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_login">
+    <!-- padding 内边距   layout_margin 外边距
+            android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <RelativeLayout
+        android:id="@+id/register_div"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip">
+        <!-- 账号 -->
+        <TextView
+            android:id="@+id/register_user_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_label_username" />
+
+        <EditText
+            android:id="@+id/username_register_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_user_input"
+            android:hint="@string/login_username_hint"
+            android:inputType="text"
+            android:singleLine="true" />
+        <!-- 密码 text -->
+        <TextView
+            android:id="@+id/register_password_input"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_register_edit"
+            android:layout_marginTop="3dp"
+            android:text="@string/login_label_password" />
+
+        <EditText
+            android:id="@+id/password_register_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password_input"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <!-- 登录button -->
+        <TextView
+            android:id="@+id/register_password_input2"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_register_edit"
+            android:layout_marginTop="67dp"
+            android:text="@string/login_label_password2" />
+
+        <EditText
+            android:id="@+id/password_register_edit2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_password_input"
+            android:layout_marginTop="71dp"
+            android:inputType="textPassword"
+            android:password="true"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_register_edit"
+            android:layout_alignRight="@id/password_register_edit"
+            android:layout_marginTop="89dp"
+            android:background="@drawable/blue_button"
+            android:text="@string/regist_label_signin" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView android:id="@+id/miniTwitter_logo"
+            android:src="@drawable/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

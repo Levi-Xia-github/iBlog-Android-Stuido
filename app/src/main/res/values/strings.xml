@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">熊熊博客</string>
+    <string name="serverurl">http://192.168.8.189:8080/</string>
+    <string name="serverurl2">http://119.3.251.225:8080/img/</string>
+    <string name="index_bottom_bar_home">首页</string>
+    <string name="index_bottom_bar_dynamic_state">关注</string>
+    <string name="index_bottom_bar_integral">消息</string>
+    <string name="index_bottom_bar_me">我的</string>
+
+
+    <string name="login_label_username">帐号</string>
+    <string name="login_label_tel">手机号码</string>
+    <string name="login_label_name">网名</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_password2">再次输入密码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_username_hint">手机号</string>
+    <string name="login_register_link">没有帐号？ <a href="#">注册</a></string>
+    <string name="regist_label_signin">注册</string>
+</resources>

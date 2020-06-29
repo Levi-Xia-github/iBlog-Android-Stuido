@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/details1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="15dip"
+        android:layout_marginTop="15dip"
+        android:layout_marginEnd="15dip"
+        android:layout_marginBottom="50dip"
+       >
+
+        <RelativeLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/details_news_title"
+                style="@style/normalText"
+                android:layout_width="348dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:text="我是题目"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <com.loopj.android.image.SmartImageView
+                android:id="@+id/details_news_author_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/details_news_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher"></com.loopj.android.image.SmartImageView>
+
+            <TextView
+                android:id="@+id/details_news_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_news_title"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="11dp"
+                android:layout_toEndOf="@+id/details_news_author_icon"
+                android:text="我是作者" />
+
+            <TextView
+                android:id="@+id/details_news_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_news_author"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/details_news_author_icon"
+                android:text="我是时间"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/details_news_content"
+                android:layout_width="339dp"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/details_news_author_icon"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="6dp"
+                android:text="我是内容" />
+
+            <TextView
+                android:id="@+id/details_news_greate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_news_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="点赞999"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/details_news_read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_news_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="45dp"
+                android:text="浏览999"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_news_greate"
+                android:layout_marginTop="20dp"
+                android:text="|||评论"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="16dp">
+
+                <com.bistu.sim.xwy.news.Other.MyListView
+                    android:id="@+id/com_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/delete_news"
+                android:layout_width="40sp"
+                android:layout_height="20sp"
+                android:layout_below="@+id/details_news_author"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@+id/details_news_time"
+                android:text="删除"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="10sp"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:layout_width="377dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="0dp">
+
+        <EditText
+            android:id="@+id/details_new_com_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="   快来评论吧~"
+            android:inputType="textShortMessage" />
+
+        <ImageButton
+            android:id="@+id/com_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/details_new_com_content"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/com_btn"
+            app:srcCompat="@android:drawable/btn_star_big_off" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

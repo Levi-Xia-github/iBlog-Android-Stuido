@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PublishActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-74dp"
+        android:background="@drawable/background_login_div_bg">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="22dp"
+            android:text="主题"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pub_news_title"
+            android:layout_width="333dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView6"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="为你的博文想一个好题目"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pub_news_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="15dp"
+            android:text="内容"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pub_news_content"
+            android:layout_width="346dp"
+            android:layout_height="207dp"
+            android:layout_below="@+id/textView7"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="top"
+            android:ems="10"
+            android:hint="这一刻的想法....."
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/pub_news_btn"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pub_news_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="39dp"
+            android:text="发布" />
+
+        <ImageView
+            android:id="@+id/pub_news_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

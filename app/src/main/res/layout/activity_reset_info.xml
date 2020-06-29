@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/icon"
+            android:scaleType="centerCrop"
+            >
+        </com.loopj.android.image.SmartImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/re_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/tv_temp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="用户名"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/tv_temp_name"
+            android:ellipsize="end"
+            android:gravity="right"
+
+            android:singleLine="true"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_sex"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:clickable="true" >
+
+
+        <TextView
+            android:id="@+id/tv_temp_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/tv_temp_sex"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/re_region"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/tv_temp_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="单位"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_danwei"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/tv_temp_region"
+            android:ellipsize="end"
+            android:gravity="right"
+
+            android:singleLine="true"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/dianhua"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/tv_temp_region1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="电话"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_dianhua"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/tv_temp_region1"
+            android:ellipsize="end"
+
+            android:enabled="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="right"
+            android:singleLine="true"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/youxiang"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true">
+
+
+        <TextView
+            android:id="@+id/tv_temp_region2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="邮箱"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/tv_youxiang"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="25dp"
+            android:layout_toRightOf="@id/tv_temp_region2"
+            android:ellipsize="end"
+            android:gravity="right"
+
+            android:singleLine="true"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="#dadada" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <Button
+            android:id="@+id/tv_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="修改" />
+
+        <ImageView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="108dp"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+    </RelativeLayout>
+
+</LinearLayout>
+
